@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: vendas_temporais
+    description: "Data Mart orientado a visao cronologica unificada das metricas de vendas do ecommerce."
+    columns:
+      - name: data_venda
+        description: "Data do dia das vendas processadas."
+        tests:
+          - not_null
+      - name: total_vendas
+        description: "Contagem distinta de vendas processadas por data/hora"
+        tests:
+          - not_null
+      - name: quantidade_total
+        description: "Quantidade total unificada dos produtos e agregada na data"
+      - name: ticket_medio
+        description: "Calculo unificado da media das vendas por aquela data/hora"

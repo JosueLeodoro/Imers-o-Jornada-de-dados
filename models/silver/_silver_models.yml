@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: silver_vendas
+    description: "Tabela de vendas central com enriquecimento de metricas brutas e dimensoes temporais."
+    columns:
+      - name: id_venda
+        description: "ID unico da venda"
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('bronze_vendas')
+              field: id_venda
+      - name: id_cliente
+        description: "ID do cliente vinculado"
+        tests:
+          - not_null
+      - name: id_produto
+        description: "ID do produto vinculado"
+        tests:
+          - not_null
+      - name: canal_venda
+        description: "Canal da venda validado."
+        tests:
+          - accepted_values:
+              values: ['ecommerce', 'loja_fisica']
+      - name: receita_total
+        description: "Calculo do preco versus quantidade vendida daquele produto"
+        tests:
+          - not_null
