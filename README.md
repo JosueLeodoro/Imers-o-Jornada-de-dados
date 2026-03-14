@@ -58,4 +58,4 @@ O projeto é estruturado em três camadas (schemas) progressivas de qualidade de
 
 ## 👨‍💻 Sobre o Autor
 
-Sou um estudante na área de Dados, apaixonado por explorar as novas ferramentas e arquiteturas do cenário moderno de engenharia e análise. Sinta-se à vontade para analisar o código, sugerir melhorias ou entrar em contato!#
+Sou um estudante na área de Dados, apaixonado por explorar as novas ferramentas e arquiteturas do cenário moderno de engenharia e análise. Sinta-se à vontade para analisar o código, sugerir melhorias ou entrar em contato!
